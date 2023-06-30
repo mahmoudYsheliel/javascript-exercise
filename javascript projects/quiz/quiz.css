@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(45deg,rgba(255,0,0,0.8),rgba(0,0,255,.8));
+}
+#bord{
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    background: linear-gradient(red,blue);
+    margin: 50px auto;
+    position: relative;
+}
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 10px;
+    background:linear-gradient(rgb(206, 222, 224),rgb(93, 4, 4));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    mix-blend-mode:normal;
+}
+button{
+    background: linear-gradient(blue,darkblue);
+    text-transform: capitalize;
+    font-size:20px ;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition-duration: 1s;
+    
+}
+button:hover{
+    background: linear-gradient(darkblue,blue);
+    
+    
+}
+#nex{
+   transform: translate(-50%,-50%) skew(20deg,20deg);
+   
+}
+#per{
+    transform: translate(-250%,-50%) skew(-20deg,-20deg);
+}
+#quiz{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    border-radius: 40px;
+    height: 200px;
+    background:linear-gradient(rgb(6, 68, 70),aqua);
+    text-transform: capitalize;
+    padding: 20px;
+}
+input{
+    margin-left: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #456990;
+}
+.intro{
+    font-size: 30px;
+    height: 200px;
+    width: 100%;
+    background-color:#f45b69;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+.timeline ul li{
+    display: inline-block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.timeline ul li::before{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: azure;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.timeline ul li::after{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color:#f45b69;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+}
+.timeline ul li:last-child::after{
+    transform: translate(-50%,-100%);
+}
+
+
+.timeline ul li div{
+    width: 350px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    position: relative;
+    margin: 20px;
+    background-color:#f45b69;
+    visibility: hidden;
+}
+
+.timeline ul li:first-child div{margin-top: 0px;}
+.timeline ul li:last-child div{margin-bottom: 0px;}
+time{
+    display: block;
+    margin: 10px;
+    font-size: 20px;
+}
+.timeline ul li:nth-child(odd) div{
+    transform: translate(60%,0);
+    border-bottom-left-radius: 0px;
+}
+.timeline ul li:nth-child(even) div{
+    transform: translate(-60%,0);
+    border-bottom-right-radius: 0px;
+}
+.timeline ul li div::after{
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 0;
+    border: #f45b69 10px solid;
+    transform: translate(0,5px);
+}
+.timeline ul li:nth-child(even) div::after{
+    border-color: transparent transparent transparent #f45b69;
+    left: 100%;
+    
+}
+
+.timeline ul li:nth-child(odd) div::after{
+    border-color: transparent #f45b69 transparent transparent ;
+    right: 100%;
+}
+
+.leftliv{
+    animation: leftli 2s ease-in-out 3s  1 ;
+
+}
+.rightliv{
+    animation: rightli 2s ease-in-out 3s  1 ;
+}
+.linev::before{
+    animation: line 2s ease-in-out  1 ;
+    content: "";
+}
+.circlev::after{
+    animation: circle 1s ease-in-out 1 ;
+    content: "";
+}
+
+@keyframes line {
+    from{height: 0px;}
+    to{height: 100%;}
+}
+@keyframes circle {
+    0%{top: 0px;}
+    50%{top: 120%;}
+    75%{top: 80%;}
+    100%{top: 100%;}
+}
+
+@keyframes leftli {
+    0%{transform: translate(-150%,0);}
+    50%{transform: translate(-40%,0);}
+    100%{transform: translate(-60%,0);}
+}
+@keyframes rightli {
+    0%{transform: translate(150%,0);}
+    50%{transform: translate(40%,0);}
+    100%{transform: translate(60%,0);}
+}
+
+
+
+

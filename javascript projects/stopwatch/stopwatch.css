@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+#time{
+    padding: 20px;
+    font-size: 40px;
+}
+button{
+    margin: 20px;
+    padding:  10px 50px;
+    font-size: 20px;
+    background-color: gray;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+button:hover{
+    background-color:white ;
+    color:  gray;
+    transition-duration: 1s;
+}

@@ -1,0 +1,52 @@
+:root {
+    --rotation: 0.5turn;
+    --time:0.5s;
+    --height:200px;
+    --width:100px;
+    --br:25px;
+}
+
+#container{
+    margin: auto;
+    width: 600px;
+    height: 500px;
+    background-color: beige;
+    display: grid;
+    grid-template-areas: 
+    'one two three four'
+    'five six seven eight';
+}
+
+.card{
+    margin: auto;
+    height:var(--height);
+    width: var(--width);
+    background-color: blue;
+    border-top-right-radius: var(--br);
+    border-bottom-left-radius: var(--br);
+    transition-duration: var(--time);
+    position: relative;
+
+}
+.newclass{
+    rotate:y var(--rotation);
+}
+
+.image{
+    position: absolute;
+    width: var(--width);
+    rotate:y var(--rotation);
+    transition-duration: var(--time);
+    transition-timing-function: linear;
+    border-radius: var(--br);
+    visibility: hidden;
+    transition-timing-function: cubic-bezier( 0.8, 0.1,0.1, 0.8);
+    top:0%;
+}
+
+
+.moveimage{
+    top: 50%;
+    visibility: visible;
+    transform: translate(0, -50%);
+}

@@ -1,0 +1,82 @@
+body{
+    background-color: darkcyan;
+    text-transform: uppercase;
+}
+#container{
+    width: 600px;
+    height: 80%;
+    margin: 25px auto ;
+    background-color: bisque;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#addtask{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    border-radius: 20px;
+}
+button{
+    width: 100px;
+    text-transform: uppercase;
+    background-color: cadetblue;
+    color: aliceblue;
+    transition-duration: 1s;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+#typeoftask{
+    margin: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+#taskcontainer{
+    margin: 50px;
+    width: 80%;
+    height:100%;
+    background-color: azure;
+    border-radius: 20px;
+    overflow:scroll;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+
+.taskobject{
+    width: 80%;
+    height: 50px;
+    margin: 25 auto;
+    background-color: darkslategray;
+    color: cyan;
+    border-radius: 15px;
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px ;
+    justify-content: space-between;
+}
+
+.edit{
+    background-color: blue;
+    width: 20%;
+}
+.delete{
+    background-color: red;
+    width: 20%;
+}
+.taskinput{
+    width: 50%;
+}
+
+
+.editable{
+    background-color: crimson;
+}

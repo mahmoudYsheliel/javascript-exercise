@@ -1,0 +1,59 @@
+body{
+    width: 500px;
+    margin: auto;
+}
+#calc_body{
+    margin: 10% auto;
+    border-color: rgba(59, 12, 14, 0.77);
+    border-width: 5px;
+    border-style:dashed;
+    border-radius: 15px;
+    background-color: rgb(60, 213, 213);
+}
+
+button{
+    margin: 10px ;
+    padding: 10px 40px;
+    font-size: 20px;
+
+}
+#result{
+    margin: 10px;
+    height: 50px;
+    border-color: black;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 15px;
+    background-color: aqua;
+    font-size: 40px;
+    text-align: right;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+#operations button{
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+.nums button{
+    border-color: rgb(27, 27, 25);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(105, 97, 86);
+}
+#equal{
+    border-color: rgb(141, 141, 16);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(86, 86, 105);
+    height: 90%;
+}
+
+.under{
+    display: flex;
+}

@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: blueviolet;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+}
+#time{
+    margin: auto;
+}

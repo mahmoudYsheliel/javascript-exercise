@@ -1,0 +1,150 @@
+:root{
+    --gamesize:400px;
+    --centersize:60%;
+    --fontpower:100%;
+    --gamefont:150%;
+    --hoverfont:175%;
+    --simonsize:250%;
+}
+
+
+body{
+    background-color: rgb(209, 175, 175);
+    text-transform: capitalize;
+}
+#container{
+    display: grid;
+    width: var(--gamesize);
+    height: var(--gamesize);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin: 50px auto;
+    position: relative;
+}
+.quart{
+    height: 100%;
+    width: 100%;
+}
+#q1{
+    border-top-left-radius: 100%;
+}
+.q1{
+    background-color: blue;
+}
+.q1active{
+    scale: 1.1;
+    background-color: rgb(0,0,100);
+}
+
+#q2{
+    border-top-right-radius: 100%;
+}
+.q2{
+    background-color: red;
+}
+.q2active{
+    scale: 1.1;
+    background-color: rgb(100,0,0);
+}
+
+#q3{
+    border-bottom-left-radius: 100%;
+}
+.q3{
+    background-color: rgb(200, 200, 200);
+}
+.q3active{
+    scale: 1.1;
+    background-color: rgb(100, 100, 100);
+}
+
+#q4{
+    border-bottom-right-radius: 100%;
+}
+.q4{
+    background-color: yellow;
+}
+.q4active{
+    scale: 1.1;
+    background-color: rgb(100,100,0);
+}
+#center{
+    position: absolute;
+    z-index: 2;
+    width: var(--centersize);
+    height: var(--centersize);
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(50, 50, 50);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:  repeat(5,1fr);
+    text-align: center;
+}
+
+#game_name{
+    grid-area:1/1/3/4 ;
+    font-size: var(--simonsize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#power{
+    grid-area:3/1/4/2 ;
+    font-size: var(--fontpower);
+}
+#start{
+    grid-area:3/2/4/3 ;
+    font-size: var(--gamefont);
+    background-color: antiquewhite;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#strickt{
+    grid-area:3/3/4/4 ;
+    font-size: var(--fontpower);
+}
+#count{
+    grid-area:4/1/5/4 ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+#countlabel{
+    grid-area:5/1/6/4 ;
+    font-size: var(--fontpower);
+}
+#yourcount{
+    position: absolute;
+    height: 80%;
+    width: 30%;
+    background-color: black;
+    top: 15%;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    width: 10px;
+    height: 10px;
+}
+
+.quart:hover{
+    cursor: pointer;
+}
+#start:active{
+    font-size:var(--hoverfont);
+    background-color: rgb(100,100,100);
+}
+#start:hover{
+    cursor: pointer;
+}
+
+
+

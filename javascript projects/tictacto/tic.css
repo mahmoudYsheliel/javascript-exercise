@@ -1,0 +1,47 @@
+body{
+    background-color: antiquewhite;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1px;
+    width: 400px;
+    max-height: 400px;
+    height: 80%;
+    margin: 50px auto;
+}
+.cell{
+    background:linear-gradient(to left,rgb(133, 188, 208),rgb(255, 0, 230));
+    border-radius: 10px;
+    border-color: black;
+    border-width: 3px;
+    border-style: double;
+    transition: 0.25s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-style: oblique;
+    font-weight: 300;
+    font-family:'Lato', sans-serif;;
+}
+.cell:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#turn{
+    height: 80px;
+    color: crimson;
+    text-align: center;
+    font-size:50px ;
+    text-transform: uppercase;
+}
+
+#won{
+    height: 100px;
+    color: rgb(26, 3, 7);
+    text-align: center;
+    font-size:80px ;
+    text-transform: uppercase;
+}

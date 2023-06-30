@@ -1,0 +1,75 @@
+
+#map{
+    position: fixed;
+    right: 0px;
+    background-color: rgb(32, 3, 3);
+    color: honeydew;
+    padding: 20px;
+    font-family: sans-serif;
+    font-style: oblique;
+    top: 50px;
+}
+p{
+    display: inline-block;
+}
+button{
+    border-radius: 10px;
+    background-color: darkblue;
+    border-color: darkred;
+    border-width: 5px;
+    pointer-events: none;
+}
+
+#image{
+    position: relative;
+    background-image: url("https://raw.githubusercontent.com/ArunMichaelDsouza/javascript-30-course/master/src/01-javascript-drum-kit/img/drum-kit.png");
+    background-repeat: no-repeat;
+    font-size: 50px;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+}
+
+#image>button{
+    position: absolute;
+}
+#E{
+    left: 50px;
+}
+#R{
+    left: 130px;
+}
+#I{
+    left: 300px;
+    top: 120px;
+}
+#K{
+    left: 370px;
+    top: 120px;
+}
+#g{
+    left: 165px;
+    top: 165px;
+}
+#h{
+    left: 250px;
+    top: 170px;
+}
+#j{
+    left: 310px;
+    top: 200px;
+}
+#F{
+    left: 100px;
+    top: 250px;
+}
+#V{
+    left: 170px;
+    top: 250px;
+}
+#B{
+    left: 250px;
+    top: 250px;
+}

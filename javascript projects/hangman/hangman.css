@@ -1,0 +1,61 @@
+body{
+    background-color: darkcyan;
+    color: darkblue;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+#buttons{
+    width: 700px;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(13,1fr);
+    background-color: azure;
+    margin: auto;
+    gap: 5px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+    color: rgb(200, 200, 233);
+    font-size: larger;
+    margin: 20px;
+    transition-duration: 2s;
+}
+button:hover{
+    color: brown;
+    background-color: rgb(200, 200, 233);
+}
+#buttons>div{
+    background-color: rgb(221, 204, 204);
+    margin: 5px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+#buttons>div:hover{
+    background-color: rgb(26, 36, 36);
+    color: bisque;
+    cursor: pointer;
+}
+#cat{
+    padding: 20px;
+    font-size: 20px;
+}
+#word{
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 15px;
+}
+#remain{
+    padding: 20px;
+    font-size: 20px;
+    word-spacing: 10px;
+}
+#hints{
+    padding: 20px;
+    font-size: 25px;
+    height: 30px;
+    word-spacing: 10px;
+}
